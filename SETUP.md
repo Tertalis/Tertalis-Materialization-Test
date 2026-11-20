@@ -52,3 +52,43 @@ Application's own `setup.bat` or `setup.ps1` separately after root setup. Those
 scripts own local templates and user-file preservation and should check existing
 platform prerequisites; they do not invoke root setup. Platform checkouts need
 no Application source to provision tools.
+
+## Materialization Test application
+
+The root setup provisions Tertalis internals only. This application currently
+has no application-specific `setup.ps1`, `setup.bat` or `run.bat`.
+Do not call the root setup script a replacement for application setup.
+The application entry point is
+`first-party/applications/materializationTest/run.py`.
+
+After root setup, review `first-party/applications/materializationTest/config.json`
+and supply the necessary external model and llama.cpp settings using the
+optional `config.local.json` overlay alongside it. Do not commit private
+local configuration or generated state.
+
+To inspect the workflow without running model inference:
+
+```powershell
+.\python-embedded\python.exe -X frozen_modules=off first-party/applications/materializationTest/run.py --new-application --describe
+```
+
+This command still initializes an application and may create saved state.
+The model-driven mode requires additional compatible binaries and model
+configuration. See [README.md](README.md) for an introduction.
+
+## Development checks
+
+From the repository root after setup:
+
+```powershell
+.\python-embedded\python.exe -X frozen_modules=off -m pytest tests/first_party/materializationTest
+.\python-embedded\python.exe -X frozen_modules=off -m pytest tests
+.\python-embedded\python.exe -X frozen_modules=off .\scripts\verify_tools.py
+```
+
+These commands are documentation, not a claim that the suite was run
+during repository migration. Report actual results and environmental
+limits. Read [AGENTS.md](AGENTS.md) for cross-repository coordination:
+the current authoritative file inbox is on
+`EnterTheNameHere/Turnix` ref `actant-integration`, not this
+application's copied `ai-workflow/` tree.
