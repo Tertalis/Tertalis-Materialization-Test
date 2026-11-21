@@ -13,9 +13,9 @@ replace the canonical coordination protocol.
    `first-party/applications/materializationTest/` and
    `tests/first_party/materializationTest/`.
 3. Read the canonical
-   [ai-workflow index](https://github.com/EnterTheNameHere/Turnix/blob/actant-integration/ai-workflow/index.txt)
+   [ai-workflow index](https://github.com/Tertalis/Tertalis/blob/integration/ai-workflow/index.txt)
    and
-   [coordination protocol](https://github.com/EnterTheNameHere/Turnix/blob/actant-integration/ai-workflow/coordination-protocol.txt)
+   [coordination protocol](https://github.com/Tertalis/Tertalis/blob/integration/ai-workflow/coordination-protocol.txt)
    on the `actant-integration` ref.
 4. Review the current Materialization Test STATE, handoff and inbox
    on that canonical ref. The copies inside this repository are
@@ -50,3 +50,16 @@ Basic development checks after root setup:
 Never claim a check passed unless it was actually executed.
 Follow the canonical coordination finish barrier and report
 exact refs, results and unresolved work.
+
+## Shared ai-workflow boundary
+
+Every assistant, implementer, integrator, coordinator and design thread must
+read the current canonical ai-workflow instructions at
+[Tertalis/Tertalis integration](https://github.com/Tertalis/Tertalis/blob/integration/ai-workflow/index.txt)
+before working. This repository's `ai-workflow/index.txt` is only a local
+routing stub; its `integration` branch is the application's development
+branch, not a coordination authority. All operational inboxes, messages,
+workstream state and repository-location registry are maintained only in
+`Tertalis/Tertalis` on `integration`. Do not create a local inbox or rely
+on copied historical mail. For other applications, consult Tertalis's
+canonical registry rather than recording their addresses here.
