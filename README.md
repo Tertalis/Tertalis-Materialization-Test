@@ -91,8 +91,8 @@ This repository participates in the **same cooperative Tertalis
 development workflow** as the platform and other applications.
 It has no independent authoritative coordination inbox.
 During the file-based transition, the canonical coordination
-ref remains `actant-integration` in
-[EnterTheNameHere/Turnix](https://github.com/EnterTheNameHere/Turnix/tree/actant-integration).
+ref remains `integration` in
+[EnterTheNameHere/Turnix](https://github.com/Tertalis/Tertalis/tree/integration).
 The copied `ai-workflow/` here is a snapshot, not a new
 active inbox; consult the canonical protocol and workstream
 state before taking ownership of any work.
