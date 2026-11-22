@@ -28,3 +28,14 @@ Repository-specific instructions belong in AGENTS.md, README.md,
 SETUP.md and application-owned source/docs. Imported historical coordination
 snapshots, if still present, are NOT active. User-directed migration freeze
 and ownership claims remain binding until expressly changed.
+
+PLATFORM SOURCE ADOPTION SAFETY CHECK
+-------------------------------------
+The only tracked file under ai-workflow/ in THIS Application integration
+tree must be ai-workflow/index.txt. An explicitly authorized Integrator
+must preserve this routing file, exclude all canonical Tertalis ai-workflow/
+content from platform-source imports, and verify the resulting committed
+Git tree before accepting a new platform SHA. For example, check
+"git ls-files -- ai-workflow/" and require exactly ai-workflow/index.txt.
+Any additional paths or missing index block integration acceptance.
+Do not automatically import newer Tertalis at task start/resume.
