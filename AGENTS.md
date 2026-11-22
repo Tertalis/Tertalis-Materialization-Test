@@ -16,7 +16,7 @@ replace the canonical coordination protocol.
    [ai-workflow index](https://github.com/Tertalis/Tertalis/blob/integration/ai-workflow/index.txt)
    and
    [coordination protocol](https://github.com/Tertalis/Tertalis/blob/integration/ai-workflow/coordination-protocol.txt)
-   on the `actant-integration` ref.
+   on the canonical `Tertalis/Tertalis` `integration` ref.
 4. Review the current Materialization Test STATE, handoff and inbox
    on that canonical ref. The copies inside this repository are
    historical snapshots and are NOT independent authoritative inboxes.
