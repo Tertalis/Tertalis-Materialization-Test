@@ -39,3 +39,17 @@ Git tree before accepting a new platform SHA. For example, check
 "git ls-files -- ai-workflow/" and require exactly ai-workflow/index.txt.
 Any additional paths or missing index block integration acceptance.
 Do not automatically import newer Tertalis at task start/resume.
+
+PLATFORM DOCUMENTATION IS NOT COPIED INTO THIS APPLICATION
+---------------------------------------------------------
+The root docs/ and design/ trees are platform-owned and must be
+absent from this Application's tracked integration tree. Consult
+current authoritative Tertalis/Tertalis design/docs externally as
+required by the task, independently of this Application's accepted
+platform source SHA. Application-specific documentation may live in
+Application-owned directories. An authorized Integrator must exclude
+root docs/, design/ and canonical ai-workflow/ from platform imports,
+preserve this local ai-workflow/index.txt, and verify the committed
+tree: neither docs/ nor design/ may contain tracked files and
+ai-workflow/ must contain only index.txt. Do not adopt newer runtime
+source automatically when checking documentation.
