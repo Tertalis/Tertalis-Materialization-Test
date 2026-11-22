@@ -90,5 +90,5 @@ These commands are documentation, not a claim that the suite was run
 during repository migration. Report actual results and environmental
 limits. Read [AGENTS.md](AGENTS.md) for cross-repository coordination:
 the current authoritative file inbox is on
-`EnterTheNameHere/Turnix` ref `actant-integration`, not this
+`Tertalis/Tertalis` ref `integration`, not this
 application's copied `ai-workflow/` tree.
