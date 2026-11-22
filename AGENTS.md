@@ -51,6 +51,20 @@ Never claim a check passed unless it was actually executed.
 Follow the canonical coordination finish barrier and report
 exact refs, results and unresolved work.
 
+## Platform documentation authority
+
+For Tertalis platform contracts and design, consult the CURRENT
+`Tertalis/Tertalis` `integration` `design/index.txt` and relevant
+authoritative platform design/docs, not this Application checkout's
+possibly older copied `design/` or `docs/` files. Retrieve only the
+areas pertinent to the assigned task and its dependencies; do not load
+the entire design corpus by default. Current documentation does NOT
+authorize upgrading this Application's accepted Tertalis source SHA.
+Some existing platform design specifications still reside in `docs/`;
+their relocation to `design/` and future creator/user docs are not
+yet complete. Release-version applicability annotations are future
+work; use exact Git SHAs in current integration reports.
+
 ## Shared ai-workflow boundary
 
 Every assistant, implementer, integrator, coordinator and design thread must
