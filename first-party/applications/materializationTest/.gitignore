@@ -1,0 +1,2 @@
+# Application-local JSON configuration shadows
+*.local.json
